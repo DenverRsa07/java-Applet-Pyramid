@@ -1,0 +1,35 @@
+import java.applet.Applet;
+import java.awt.*;
+
+/**@authors: Joseph Nkomo
+public class Pyramid extends Applet
+{
+
+    /**
+     * Initialization method that will be called after the applet is loaded into
+     * the browser.
+     */
+    public void init()
+    {
+        setSize(700, 500);
+        Font myf = new Font("Arial", Font.BOLD, 30);
+        setFont(myf);
+    }
+
+    public void paint(Graphics g)
+    {
+        g.setColor(Color.black);
+        int[] x =
+        {
+            170, 280, 140, 75
+        };
+        int[] y =
+        {
+            50, 150, 170, 125
+        };
+        g.drawPolygon(x, y, 4);
+        g.setColor(Color.black);
+        g.drawLine(140, 170, 170, 50);
+    }
+
+}
